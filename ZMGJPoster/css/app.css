@@ -1,0 +1,175 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*框架*/
+
+html {
+	-ms-touch-action: none;
+}
+
+
+/* 禁止winphone默认触摸事件 */
+
+body {
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.page-wrap {
+	overflow: hidden
+}
+
+.page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.contain {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: relative;
+	z-index: 0
+}
+
+.current .contain,
+.slide .contain {
+	display: block
+}
+
+.current {
+	display: block;
+	z-index: 1
+}
+
+.slide {
+	display: block;
+	z-index: 2
+}
+
+.swipe {
+	display: block;
+	z-index: 3;
+	transition-duration: 0ms!important;
+	-webkit-transition-duration: 0ms!important
+}
+
+.furu {
+	-webkit-animation: fur .5s ease-in
+}
+
+@-webkit-keyframes fur {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: .2
+	}
+}
+
+.u-globalAudio {
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	display: block;
+	z-index: 9999
+}
+
+.u-globalAudio span {
+	position: absolute;
+	left: -60px;
+	top: 10px;
+	text-shadow: 1px 1px 1px #000;
+	letter-spacing: 2px;
+	-webkit-transition: all .2s linear;
+	opacity: 0;
+	-webkit-transform: translateX(-20px)
+}
+
+.u-globalAudio .icon-music {
+	width: 44px;
+	height: 44px;
+	background: url(../img/music.png);
+	display: block;
+}
+
+.u-globalAudio.z-play .icon-music {
+	-webkit-animation: reverseRotataZ 1.2s linear infinite
+}
+
+.u-globalAudio span.z-show {
+	opacity: 1;
+	-webkit-transform: translateX(0px)
+}
+
+.u-globalAudio .coffee-steam-box {
+	-webkit-transform: translate(-40px, -40px)
+}
+
+@-webkit-keyframes reverseRotataZ {
+	0% {
+		-webkit-transform: rotateZ(0deg)
+	}
+	100% {
+		-webkit-transform: rotateZ(-360deg)
+	}
+}
+
+@-webkit-keyframes rotataZ {
+	0% {
+		-webkit-transform: rotateZ(0deg)
+	}
+	100% {
+		-webkit-transform: rotateZ(360deg)
+	}
+}
+
+.u-guideTop.z-move {
+	-webkit-animation: guideTop 1.5s infinite
+}
+
+@-webkit-keyframes guideTop {
+	0% {
+		-webkit-transform: translateY(20px);
+		opacity: 0
+	}
+	60% {
+		-webkit-transform: translateY(0px);
+		opacity: 1
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		opacity: 0
+	}
+}
+
+.u-guideTop {
+	width: 108px;
+	height: 46px;
+	background: url(../img/arrow.png) no-repeat;
+	position: absolute;
+	left: 0;
+	margin-left: -14px;
+	display: block;
+	z-index: 9998
+}
+
+.u-guideWrap {
+	width: 108px;
+	height: 46px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: 0;
+}

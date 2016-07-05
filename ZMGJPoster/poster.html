@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<!--<link rel="myh icon" href="myh_images/myhweb.ico" />-->
+		<style type="text/css">
+			.p-top {
+				width: 90%;
+				padding-top: 50px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.p-top img {
+				width: 100%;
+			}
+			
+			.p6-top {
+				width: 60%;
+				padding-top: 4%;
+			}
+			
+			.p6-middle {
+				width: 100%;
+				margin-bottom: -16%;
+				height: 30%;
+				padding: 0;
+			}
+			
+			.p6-middle img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.p6-bottom {
+				position: absolute;
+				left: 20px;
+				bottom: 10px;
+				width: 80%;
+			}
+			
+			.p6-bottom img {
+				width: 100%;
+			}
+			
+			.p8-top {
+				padding-top: 0px;
+				z-index: 0;
+				width: 100%;
+			}
+			
+			.p8-top-a {
+				position: absolute;
+				z-index: 1;
+				left: 50%;
+				width: 73%;
+				top: 20px;
+			}
+			
+			.p8-top-a img {
+				width: 100%;
+				margin-left: -50%;
+			}
+			
+			.p9-top {
+				padding-top: 0px;
+				z-index: 0;
+				width: 70%;
+			}
+			
+			.p9-top-a {
+				margin-top: -35%;
+				width: 48%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			/*.p9-top-b {
+				width: 99px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.p9-top-b img {
+				width: 100%;
+			}*/
+			
+			.p9-top-c {
+				position: relative;
+				padding-top: 0;
+				margin-top: 10%;
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.p9-top-c img {
+				width: 100%;
+			}
+			
+			.p1-top {
+				width: 50%;
+				padding-top: 15%;
+			}
+			
+			.p1-mx {
+				position: absolute;
+				top: 25%;
+				bottom: 25%;
+				width: 100%;
+				height: 50%;
+			}
+			
+			.p1-mx img {
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+			}
+			
+			.p1-circle {
+				position: absolute;
+				width: 50%;
+				height: 25%;
+				left: 50%;
+				top: 50%;
+				margin-left: -25%;
+				margin-top: -30%;
+			}
+			
+			.p1-circle img {
+				width: 100%;
+				z-index: 2;
+			}
+			
+			.p1-circle-text {
+				position: absolute;
+				width: 36%;
+				height: 20%;
+				left: 50%;
+				margin-left: -18%;
+				top: 42%;
+			}
+			
+			.p1-circle-text img {
+				width: 100%;
+			}
+			
+			.p1-ch {
+				position: absolute;
+				width: 180px;
+				left: 50%;
+				margin-left: -90px;
+				bottom: 50px;
+			}
+			
+			.p1-ch img {
+				width: 100%;
+			}
+			
+			.p2-top {
+				width: 80%;
+			}
+			
+			.p2-logo {
+				padding-top: 40px;
+				width: 40%;
+			}
+			
+			.p2-bottom {
+				position: absolute;
+				width: 80%;
+				left: 50%;
+				margin-left: -40%;
+				bottom: 20px;
+			}
+			
+			.p2-bottom img {
+				width: 100%;
+			}
+			
+			.p5-top {
+				padding-top: 35%;
+			}
+			
+			.p5-top-content {
+				padding-top: 6%;
+				width: 70%;
+			}
+			
+			.p5-top-content img {
+				width: 100%;
+			}
+			/*.p5-top-content-1 {
+				width: 55%;
+				margin-top: -70px;
+			}
+			
+			.p5-top-content-2 {
+				margin-top: -60px;
+			}
+			
+			.p5-top-content-3 {
+				width: 90%;
+				margin-top: -30px;
+			}
+			
+			.p5-top-content-4 {
+				margin-top: -65px;
+			}
+			
+			.p5-top-content-5 {
+				margin-top: -65px;
+			}*/
+			
+			.p3-top {
+				width: 206px;
+				padding-top: 20px;
+			}
+			
+			.p3-top img {
+				margin: 0 8px 0 8px;
+				width: 60px;
+			}
+			
+			.p3-top1 {
+				width: 50%;
+			}
+			
+			.p3-top2 {
+				padding-top: 0;
+				margin-top: -52%;
+				width: 60%;
+			}
+			
+			.p3-top3 {
+				padding-top: 0;
+				margin-top: -22%;
+				width: 35%;
+			}
+			
+			.p3-top3 img {
+				width: 100%;
+			}
+			
+			.p3-top4 {
+				padding-top: 22%;
+				width: 70%;
+			}
+			
+			.p3-topline {
+				padding-top: 0px;
+				margin-top: -10px;
+				margin-right: 12%;
+				width: 70%;
+			}
+			
+			.p3-top5 {
+				padding-top: 10px;
+				width: 60%;
+			}
+			
+			.p3-top6 {
+				padding-top: 5px;
+				width: 90%;
+			}
+			
+			.p4-top {
+				width: 50%;
+				padding-top: 20px;
+			}
+			
+			.p4-top1 {
+				width: 50%;
+				height: 25%;
+				padding-top: 10px;
+			}
+			
+			.p4-top1 img {
+				height: 100%;
+			}
+			
+			.p4-top2 {
+				width: 40%;
+				padding-top: 0;
+				margin-top: -5%;
+				margin-left: 6%;
+			}
+			
+			.p4-top3 {
+				width: 40%;
+				padding-top: 0;
+				margin-top: -40%;
+				margin-right: 6%;
+			}
+			
+			.p4-top4 {
+				width: 40%;
+				padding-top: 0;
+				margin-top: 0%;
+				margin-left: 6%;
+			}
+			
+			.p4-top5 {
+				padding-top: 0;
+				width: 40%;
+				margin-top: -40%;
+				margin-right: 6%;
+			}
+			
+			.p7-top {
+				width: 60%;
+				margin-left: 5%;
+				padding-top: 40%;
+			}
+			
+			.p7-top1 {
+				width: 70%;
+				margin-right: 0%;
+				margin-top: -40%;
+			}
+			
+			.p7-top2 {
+				width: 72%;
+				margin-left: 4%;
+				margin-top: -32%;
+			}
+			
+			.myh-animation-delay-3 {
+				-webkit-animation-delay: .3s;
+				-moz-animation-delay: .3s;
+				-ms-animation-delay: .3s;
+				animation-delay: .3s;
+			}
+			
+			.myh-animation-delay-6 {
+				-webkit-animation-delay: .8s;
+				-moz-animation-delay: .8s;
+				-ms-animation-delay: .8s;
+				animation-delay: .8s;
+			}
+			
+			.myh-animation-delay-9 {
+				-webkit-animation-delay: 1.3s;
+				-moz-animation-delay: 1.3s;
+				-ms-animation-delay: 1.3s;
+				animation-delay: 1.3s;
+			}
+		</style>
+	</head>
+
+	<!--[if lte IE 7]>      
+<body scroll="no"> 
+<![endif]-->
+	<!--[if gt IE 7]><!-->
+
+	<body>
+		<header>
+			<a href="javascript:playAudio();" class="u-globalAudio">
+				<i class="icon-music"></i>
+				<audio>
+						<source src="music/bgmusic.mp3" >
+						</source>
+				</audio>
+				<span id="audioSpan" class="z-show"></span>
+			</a>
+		</header>
+		<!--<![endif]-->
+
+		<!-- 框架[[ -->
+		<div id="pageContain" class="page-wrap">
+			<!--
+            	作者：devryan@163.com
+            	时间：2016-07-04
+            	描述：测试页
+            -->
+			<!--<div class="page current">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/7-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p7-top  a-bounceinL">
+						<img src="img/7-1.png" />
+					</div>
+					<div class="p-top p7-top1  a-bounceinR">
+						<img src="img/7-2.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>-->
+			<!--第一页-->
+			<div class="page ">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/1-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p1-top a-bounceinT">
+						<img src="img/1-1.png" />
+					</div>
+					<div class="p1-mx a-fadein">
+						<img src="img/1-2.png" />
+					</div>
+					<div class=" p1-circle a-fadein">
+						<img src="img/1-3.png" />
+					</div>
+					<div class=" p1-circle-text a-bounceinS">
+						<img src="img/1-4.png" />
+					</div>
+					<div class=" p1-ch a-bounceinB">
+						<img src="img/1-5.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第二页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/2-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p2-top a-bounceinT">
+						<img src="img/2-1.png" />
+					</div>
+					<div class="p-top p2-logo a-fadein">
+						<img src="img/2-2.png" />
+					</div>
+					<div class=" p2-bottom a-bounceinB">
+						<img src="img/2-3.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第三页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/3-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p3-top  a-bounceinT">
+						<img src="img/3-1.png" />
+						<img src="img/3-2.png" style="width:30px ;margin-bottom: 25px;" />
+						<img src="img/3-4.png" />
+					</div>
+					<div class="p-top p3-top1  a-fadein">
+						<img src="img/3-5.png" />
+					</div>
+					<div class="p-top p3-top2  a-fadein">
+						<img src="img/3-6.png" />
+					</div>
+					<div class="p-top p3-top3  a-fadein">
+						<img src="img/3-7.png" />
+					</div>
+					<div class="p-top p3-top4 myh-animation-delay-3  a-fadein">
+						<img src="img/3-8.png" />
+					</div>
+					<div class="p-top p3-topline   a-fadein">
+						<img src="img/3-line.png" />
+					</div>
+					<div class="p-top p3-top5 myh-animation-delay-6   a-fadein">
+						<img src="img/3-9.png" />
+					</div>
+					<div class="p-top p3-top6 myh-animation-delay-9   a-fadein">
+						<img src="img/3-10.png" />
+					</div>
+
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第四页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/4-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p4-top  a-fadein">
+						<img src="img/4-6.png" />
+					</div>
+					<div class="p-top p4-top1  a-fadein">
+						<img src="img/4-5.png" />
+					</div>
+					<div class="p-top p4-top2  a-bounceinL">
+						<img src="img/4-1.png" />
+					</div>
+					<div class="p-top p4-top3   a-bounceinR myh-animation-delay-3">
+						<img src="img/4-2.png" />
+					</div>
+					<div class="p-top p4-top4   a-bounceinL myh-animation-delay-6">
+						<img src="img/4-3.png" />
+					</div>
+					<div class="p-top p4-top5  a-bounceinR myh-animation-delay-9">
+						<img src="img/4-4.png" />
+					</div>
+
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第五页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/5-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p5-top a-fadeinT">
+						<img src="img/5-1.png" />
+					</div>
+					<div class="p-top p5-top-content a-shake">
+						<img src="img/5-2.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第六页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/6-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p6-top a-fadeinT">
+						<img src="img/6-1.png" />
+					</div>
+					<div class="p6-middle a-fadeinR">
+						<img src="img/6-2.png" />
+					</div>
+					<div class="p6-middle a-fadein">
+						<img src="img/6-3.png" />
+					</div>
+					<div class="p6-middle a-fadeinL">
+						<img src="img/6-4.png" />
+					</div>
+					<div class="p6-bottom a-fadeinB">
+						<img src="img/6-5.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第七页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/7-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p7-top  a-bounceinL">
+						<img src="img/7-1.png" />
+					</div>
+					<div class="p-top p7-top1  a-bounceinR">
+						<img src="img/7-2.png" />
+					</div>
+					<!--<div class="p-top p7-top2  a-fadein">
+						<img src="img/7-3.png" />
+					</div>-->
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第八页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/8-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p8-top-a a-bounceinT">
+						<img src="img/8-1.png" />
+					</div>
+					<div class="p-top p8-top a-fadeinT">
+						<img src="img/8-2.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+			<!--第九页-->
+			<div class="page">
+				<div class="contain">
+					<div style="position:absolute; width:100%; height:100%; z-index:-1">
+						<img src="img/9-bg.png" height="100%" width="100%" />
+					</div>
+					<div class="p-top p9-top a-bounceinT">
+						<img src="img/9-1.png" />
+						<div class="p9-top-a a-fadein">
+							<img src="img/9-2.jpg" />
+						</div>
+					</div>
+					<div class="p9-top-c a-bounceinB">
+						<img src="img/9-4.png" />
+					</div>
+					<div class="u-guideWrap furu">
+						<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/fullPage.min.js"></script>
+	<script type="text/javascript">
+		var eaudio = document.getElementsByTagName('audio')[0];
+		var audioA = document.querySelector('.u-globalAudio');
+		var audioSpan = document.getElementById('audioSpan');
+		var loaded = null;
+
+		//		function play() {
+		//
+		//		}
+
+		//		function pause() {
+		//			eaudio.pause();
+		//			audioA.classList.remove('z-play');
+		//			audioSpan.innerText = '关闭';
+		//			audioSpan.classList.add('z-show');
+		//			setTimeout(function() {
+		//				audioSpan.classList.remove('z-show');
+		//			}, 1000);
+		//		}
+
+		function playAudio(t) {
+			if (!loaded)
+				return;
+			
+			if (eaudio.paused == true || t == 1) {
+				//				try {
+				eaudio.play();
+				//				} catch (e) {
+				//					console.log(e + ' 不支持自动播放');
+				//				}
+				if (eaudio.paused == false) {
+					console.log('播放');
+					audioA.classList.add('z-play');
+					audioSpan.innerText = '开启';
+					audioSpan.classList.add('z-show');
+					setTimeout(function() {
+						audioSpan.classList.remove('z-show');
+					}, 1000);
+				}
+			} else if (eaudio.paused == false) {
+				eaudio.pause();
+				console.log('暂停');
+				audioA.classList.remove('z-play');
+				audioSpan.innerText = '关闭';
+				audioSpan.classList.add('z-show');
+				setTimeout(function() {
+					audioSpan.classList.remove('z-show');
+				}, 1000);
+			}
+		}
+		window.onload = function() {
+			eaudio.addEventListener("canplaythrough", function() {
+				console.log('canplaythrough');
+				loaded = true;
+				playAudio(1);
+			});
+			eaudio.autoplay = true;
+			eaudio.loop = true;
+			eaudio.load();
+		};
+
+		//禁止窗口的默认滑动
+		document.ontouchmove = function(e) {
+			e.preventDefault();
+		};
+		//框架
+		var runPage, interval, autoPlay;
+		autoPlay = function(to) {
+			clearTimeout(interval);
+			interval = setTimeout(function() {
+				runPage.go(to);
+			}, 5000);
+		};
+		//		var indicator = document.createElement('div');
+		//		indicator.classList.add('u-guideWrap');
+		//		indicator.classList.add('furu');
+		//		indicator.innerHTML = '<a href="javascript:void(0);" class="u-guideTop z-move furu"></a>';
+		//		var firstPage = document.querySelector('.contain');
+		//		firstPage.appendChild(indicator);
+		runPage = new FullPage({
+			id: 'pageContain', // id of contain
+			slideTime: 800, // time of slide
+			continuous: true, // create an infinite feel with no endpoints
+			effect: { // slide effect
+				transform: {
+					translate: 'Y', // 'X'|'Y'|'XY'|'none'
+					scale: [1, 1], // [scalefrom, scaleto]
+					rotate: [0, 0] // [rotatefrom, rotateto]
+				},
+				opacity: [0, 1] // [opacityfrom, opacityto]
+			},
+			mode: 'wheel,touch', // mode of fullpage wheel,touch
+			easing: 'ease-in', // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1] )
+			//			callback: function(index, thisPage) {
+			//				//				index = index + 1 > 3 ? 0 : index + 1;
+			//				//				autoPlay(index);
+			//				console.log(thisPage);
+			//				thisPage.appendChild(indicator);
+			//			}
+		});
+
+		// interval = setTimeout(function() {
+		//     runPage.go(runPage.thisPage() + 1);
+		// }, 5000);
+	</script>
+
+</html>
